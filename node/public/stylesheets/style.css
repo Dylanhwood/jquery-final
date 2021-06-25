@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  height: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h2 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  color: rgb(31, 86, 158);
+}
+
+.contents {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.5em;
+  color: rgb(49, 49, 49);
+}
+
+.centering {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  text-decoration: none;
+  line-height: 200%;
+  font-family: "Raleway" light, sans-serif;
+}
+
+.flex {
+  text-align: center;
+  display: flex;
+  margin-left: 45%;
+  padding: 15px;
+}
+.stat {
+  color: rgba(255, 60, 60, 0.808);
+  font-family: "Raleway" light, sans-serif;
+  font-size: 1.25em;
+}
+#info h3 {
+  text-align: center;
+}
+
+.flex-box {
+  width: 100%;
+  display: inline;
+  grid-template-columns: 1fr 1fr;
+}
+flex-box:last-child {
+  float: right;
+  text-align: right;
+}
+.item {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.itemText {
+  padding-left: 10px;
+}
+
+#homeDiv h3 span {
+  color: rgb(255, 187, 0);
+}
+#homeDiv h3 a {
+  color: #ff3838;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#homeDiv h3 a:hover {
+  color: orchid;
+  text-shadow: 1px 1px 3px black;
+}
+#delete {
+  background-color: rgb(31, 86, 158);
+  color: black;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+#delete:hover {
+  color: white;
+  background-color: rgb(255, 68, 21);
+}
+label {
+  font-size: semi-bold;
+}
+#buttonAdd {
+  background-color: grey;
+  transition: all 0.2s ease-in-out;
+}
+#buttonAdd:hover {
+  background-color: rgb(1, 48, 255);
+}

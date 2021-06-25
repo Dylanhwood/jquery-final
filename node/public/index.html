@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Programs List</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="javascript/script.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="home">
+      <!-- header -->
+
+      <div data-role="header" data-theme="a">
+        <div class="flex">
+          <h2>Home</h2>
+          <img src="home.svg" alt="recorder" width="30" />
+        </div>
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#stats">Information</a></li>
+            <li><a href="#add">Add Shows & Movies</a></li>
+            <li><a href="#list">Programs List</a></li>
+          </ul>
+        </div>
+        <!-- /navbar -->
+      </div>
+
+      <!-- content -->
+      <div data-role="content" data-theme="b" class="contents">
+        <div id="homeDiv">
+          <div data-role="content" data-theme="b" class="contents">
+            <h3>
+              Add Programs<span><i>(eg.Shows and Movies)</i></span> you've
+              watched or finished and give them ratings! Movies will be saved
+              and we will supply you with a trailer for every movie your enter
+              via
+              <a href="https://www.youtube.com/" target="_blank">YouTube!</a>
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- notes footer -->
+      <div data-role="footer" data-theme="a">
+        <div class="centering">
+          <img src="thankyou.svg" alt="Thank you!" width="200" />
+        </div>
+        <h3>Copyright 2021 by Dylan Wood & Nathan Nixon</h3>
+      </div>
+    </div>
+
+    <div data-role="page" id="stats">
+      <!-- header -->
+
+      <div data-role="header" data-theme="a">
+        <div class="flex">
+          <h2>Your Information</h2>
+          <img src="paperclip.svg" alt="recorder" width="30" />
+        </div>
+        <div data-role="navbar" data-theme="e" id="nav_bar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#add">Add Shows & Movies</a></li>
+            <li><a href="#list">Programs List</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- /navbar -->
+
+      <!-- content -->
+
+      <div data-role="content" data-theme="a" id="info">
+        <h3>Here is some Information We Gathered</h3>
+        <div class="flex-box">
+          <ul>
+            <h4>Program Information</h4>
+            <li>
+              Amount of Programs Watched Total:
+              <div id="numMovies" class="stat"></div>
+            </li>
+
+            <li>
+              Shows Planning to Watch:
+              <div id="numPlanning" class="stat"></div>
+            </li>
+            <li>
+              Shows Watching:
+              <div id="numWatched" class="stat"></div>
+            </li>
+            <li>
+              TV Series Watched:
+              <div id="numTelevision" class="stat"></div>
+            </li>
+            <li>
+              Programs Finished:
+              <div id="numFinished" class="stat"></div>
+            </li>
+          </ul>
+          <ul>
+            <h4>Genre Information</h4>
+            <li>
+              Number of Action Movies:
+              <div id="numAction" class="stat"></div>
+            </li>
+            <li>
+              Number of Comedies:
+              <div id="numComedy" class="stat"></div>
+            </li>
+            <li>
+              Number of Dramas:
+              <div id="numDrama" class="stat"></div>
+            </li>
+            <li>
+              <div>Number of Horror Movies:</div>
+              <div id="numHorror" class="stat"></div>
+            </li>
+            <li>
+              <div>Number of Romance Movies:</div>
+              <div id="numRomance" class="stat"></div>
+            </li>
+            <li>
+              Number of Sci-Fi Movies:
+              <div id="numScience" class="stat"></div>
+            </li>
+
+            <li>
+              Number of Thriller Movies:
+              <div id="numThriller" class="stat"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- notes footer -->
+    <div data-role="footer" data-theme="a">
+      <div class="centering">
+        <img src="thankyou.svg" alt="Thank you!" width="200" />
+      </div>
+      <h3>Copyright 2021 by Dylan Wood & Nathan Nixon</h3>
+    </div>
+
+    <div data-role="page" id="add">
+      <!-- header -->
+      <div data-role="header" data-theme="a">
+        <div class="flex">
+          <h2>Add a Program</h2>
+          <img src="recorder.svg" alt="recorder" width="30" />
+        </div>
+        <div data-role="navbar" data-theme="b">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#add">Add Shows & Movies</a></li>
+            <li><a href="#list">Programs List</a></li>
+          </ul>
+        </div>
+        <!-- /navbar -->
+      </div>
+
+      <!-- content -->
+      <div data-role="content" data-theme="e">
+        <label for="programName">Enter Program Name:</label>
+        <input type="text" value="" id="programName" />
+        <label for="type">Select a Type</label>
+        <select name="type" id="type">
+          <option value="Movie">Movie</option>
+          <option value="TV Series">TV Series</option>
+        </select>
+
+        <label for="status">Current Status:</label>
+        <select name="status" id="status">
+          <option value="Watching">Watching</option>
+          <option value="Completed">Completed</option>
+          <option value="Dropped">Dropped</option>
+          <option value="Plan to Watch">Plan to Watch</option>
+        </select>
+
+        <label for="rating">Rating:</label>
+        <select name="rating" id="rating">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <label for="genre">Genre(A-Z):</label>
+        <select name="genre" id="genre">
+          <option value="Action & Adventure">Action & Adventure</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Drama">Drama</option>
+          <option value="Horror">Horror</option>
+          <option value="Romance">Romance</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Thriller">Thriller</option>
+        </select>
+        <label for="link">URL: </label>
+        <input type="text" value="" id="link" />
+
+        <input
+          type="button"
+          value="Click To Add Show"
+          data-theme="b"
+          id="buttonAdd"
+          onClick="formSubmitEvent()"
+        />
+      </div>
+
+      <!-- notes footer -->
+      <div data-role="footer" data-theme="a">
+        <div class="centering">
+          <img src="thankyou.svg" alt="Thank you!" width="200" />
+        </div>
+        <h3>Copyright 2021 by Dylan Wood & Nathan Nixon</h3>
+      </div>
+    </div>
+
+    <div data-role="page" id="list">
+      <!-- header -->
+      <div data-role="header" data-theme="a">
+        <div class="flex">
+          <h2>Your List of Programs</h2>
+          <img src="list.svg" alt="recorder" width="25" />
+        </div>
+        <div data-role="navbar" data-theme="e">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#add">Add Shows & Movies</a></li>
+            <li><a href="#list">Programs List</a></li>
+          </ul>
+        </div>
+        <!-- /navbar -->
+      </div>
+
+      <div data-role="content" data-theme="c">
+        <p>Here are the Movies you added.</p>
+      </div>
+
+      <!-- content -->
+      <div data-role="content" data-theme="a">
+        <div id="linkList"></div>
+
+        <ul id="listId"></div>
+        </ul>
+      </div>
+
+      <!-- footer -->
+      <div data-role="footer" data-theme="a">
+        <div class="centering">
+          <img src="thankyou.svg" alt="Thank you!" width="200" />
+        </div>
+        <h3>Copyright 2021 by Dylan Wood & Nathan Nixon</h3>
+      </div>
+    </div>
+    <p id="IDparmHere" hidden>change1</p>
+    <!--hidden, a place to stash the user ID -->
+  </body>
+</html>
