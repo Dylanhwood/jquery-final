@@ -80,6 +80,13 @@ flex-box:last-child {
   color: orchid;
   text-shadow: 1px 1px 3px black;
 }
+#text {
+  transition: all 0.3s ease-in-out;
+}
+#text:hover {
+  color: rgb(255, 70, 23);
+  cursor: pointer;
+}
 #delete {
   background-color: rgb(31, 86, 158);
   color: black;
@@ -93,6 +100,7 @@ flex-box:last-child {
 label {
   font-size: semi-bold;
 }
+
 #buttonAdd {
   background-color: grey;
   transition: all 0.2s ease-in-out;

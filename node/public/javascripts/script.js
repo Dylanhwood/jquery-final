@@ -111,6 +111,7 @@ function serverEntries() {
       }
        //Initialize Variables
       let newText = document.createElement('li')
+      newText.setAttribute("id", "text");
       let deleteBtn = document.createElement('button')
       let listItem = document.createElement('li')
       //For css customization
