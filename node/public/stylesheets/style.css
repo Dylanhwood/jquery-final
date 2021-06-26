@@ -88,14 +88,13 @@ flex-box:last-child {
   cursor: pointer;
 }
 #delete {
-  background-color: rgb(31, 86, 158);
-  color: black;
-  border-radius: 50%;
+  background-color: rgb(158, 39, 31);
+  color: rgb(255, 248, 248);
+  border-radius: 5px;
   transition: all 0.3s ease-in-out;
 }
 #delete:hover {
-  color: white;
-  background-color: rgb(255, 68, 21);
+  background-color: rgb(255, 98, 50);
 }
 label {
   font-size: semi-bold;

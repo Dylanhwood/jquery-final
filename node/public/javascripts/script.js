@@ -143,7 +143,7 @@ function serverEntries() {
           }
         })
       }
-      deleteBtn.innerHTML = 'X'
+      deleteBtn.innerHTML = 'DELETE'
   
       newText.appendChild(deleteBtn)
       newText.appendChild(content)
