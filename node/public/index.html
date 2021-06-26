@@ -15,7 +15,7 @@
     />
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script src="javascript/script.js"></script>
+    <script src="javascripts/script.js"></script>
   </head>
   <body>
     <div data-role="page" id="home">
@@ -24,7 +24,7 @@
       <div data-role="header" data-theme="a">
         <div class="flex">
           <h2>Home</h2>
-          <img src="home.svg" alt="recorder" width="30" />
+          <img src="home.svg" alt="home" width="30" />
         </div>
         <div data-role="navbar" data-theme="b">
           <ul>
@@ -221,7 +221,7 @@
           value="Click To Add Show"
           data-theme="b"
           id="buttonAdd"
-          onClick="formSubmitEvent()"
+          onClick="newElement()"
         />
       </div>
 
@@ -260,8 +260,7 @@
       <div data-role="content" data-theme="a">
         <div id="linkList"></div>
 
-        <ul id="listId"></div>
-        </ul>
+        <ul id="listId"></ul>
       </div>
 
       <!-- footer -->
@@ -272,7 +271,5 @@
         <h3>Copyright 2021 by Dylan Wood & Nathan Nixon</h3>
       </div>
     </div>
-    <p id="IDparmHere" hidden>change1</p>
-    <!--hidden, a place to stash the user ID -->
   </body>
 </html>
